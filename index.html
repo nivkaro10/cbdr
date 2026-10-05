@@ -1,68 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CBDR | Cross-Border Development & Representation | Israel & Global Markets</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>CBDR | Your Business, Your Peace of Mind</title>
+
+<!-- SEO -->
+<meta name="description" content="CBDR gives businesses, organizations, and individuals senior operational support without hiring another department: global client management, process and resource optimization, procurement, strategic partnerships, and B2B sales development.">
+<meta name="author" content="CBDR">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#152644">
+<link rel="canonical" href="https://cbdr-consulting.com/">
+<link rel="alternate" hreflang="en" href="https://cbdr-consulting.com/">
+<link rel="alternate" hreflang="he" href="https://cbdr-consulting.com/?lang=he">
+<link rel="alternate" hreflang="x-default" href="https://cbdr-consulting.com/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CBDR">
+<meta property="og:url" content="https://cbdr-consulting.com/">
+<meta property="og:title" content="CBDR | Your Business, Your Peace of Mind">
+<meta property="og:description" content="Senior operational support for businesses, organizations, and individuals, wherever and whenever you need it.">
+<meta property="og:image" content="https://cbdr-consulting.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="he_IL">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CBDR | Your Business, Your Peace of Mind">
+<meta name="twitter:description" content="Senior operational support for businesses, organizations, and individuals, wherever and whenever you need it.">
+<meta name="twitter:image" content="https://cbdr-consulting.com/og-image.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CBDR",
+  "url": "https://cbdr-consulting.com/",
+  "logo": "https://cbdr-consulting.com/favicon.svg",
+  "image": "https://cbdr-consulting.com/og-image.jpg",
+  "email": "niv@cbdr-consulting.com",
+  "slogan": "Your Business, Your Peace of Mind.",
+  "description": "CBDR partners with businesses, organizations, and individuals who need senior operational support without hiring another department.",
+  "founder": { "@type": "Person", "name": "Niv Karo", "jobTitle": "Founder & Owner", "sameAs": "https://www.linkedin.com/in/niv-karo-b4b01a26a" },
+  "areaServed": "Worldwide",
+  "serviceType": [
+    "Global Client Management and Retention",
+    "Process and Resource Optimization",
+    "Procurement",
+    "Strategic Partnerships",
+    "B2B Sales Development"
+  ],
+  "knowsLanguage": ["English", "Hebrew"],
+  "sameAs": ["https://www.linkedin.com/company/cbdr-consulting"]
+}
+</script>
+
+<!-- ANALYTICS: paste your analytics snippet here (Google Analytics, Plausible, etc.) -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --navy: #161a20;
-  --navy2: #1c2129;
-  --navy3: #222830;
-  --blue: #2a5298;
-  --blue-soft: #eef2fa;
-  --gold: #9a7820;
-  --gold-mid: #b8952a;
-  --gold-bright: #d4ac44;
-  --gold-light: #faf6ec;
+  --navy: #152644;
+  --navy2: #1a2e52;
+  --navy-deep: #0e1a30;
+  --teal: #60A0A0;
+  --teal-bright: #86c2c2;
+  --teal-dark: #3a7575;
+  --teal-soft: #eef5f5;
   --white: #ffffff;
-  --off: #f5f5f2;
-  --border: #dddbd4;
-  --muted: #64665e;
-  --text: #1a1c20;
+  --off: #f5f6f7;
+  --border: #dbe0e6;
+  --muted: #5a6473;
+  --text: #17202e;
+  --serif: 'Fraunces', 'Frank Ruhl Libre', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', 'Heebo', system-ui, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--white); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body { font-family: var(--sans); background: var(--white); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+html[lang="he"] .t-en, html[lang="en"] .t-he { display: none; }
 
-/* ── NAV ── */
+/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  background: rgba(7,17,31,0.95); backdrop-filter: blur(16px);
+  background: rgba(14,26,48,0.95); backdrop-filter: blur(16px);
   padding: 0 56px; height: 58px;
   display: flex; align-items: center; justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.nav-logo { display: flex; align-items: center; gap: 12px; direction: ltr !important; }
-.nav-abbr {
-  font-family: 'Fraunces', serif; font-size: 20px; font-weight: 900;
-  color: #fff; letter-spacing: 0.08em;
-}
-.nav-abbr .g { color: var(--gold-bright); }
-.nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); }
-.nav-tagline { font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.28); letter-spacing: 0.1em; text-transform: uppercase; }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-abbr { direction: ltr; font-family: 'Fraunces', serif; font-size: 20px; font-weight: 900; color: #fff; letter-spacing: 0.08em; }
+.nav-abbr .g { color: var(--teal-bright); }
+.nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.14); }
+.nav-tagline { font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.55); letter-spacing: 0.1em; text-transform: uppercase; }
 .nav-right { display: flex; align-items: center; gap: 24px; }
-.nav-link { font-size: 11.5px; color: rgba(255,255,255,0.4); text-decoration: none; font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s; }
-.nav-link:hover { color: rgba(255,255,255,0.8); }
-.lang-toggle { display: flex; gap: 3px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 3px; }
-.ltb { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 16px; cursor: pointer; border: none; background: transparent; color: rgba(255,255,255,0.38); font-family: 'Plus Jakarta Sans', sans-serif; transition: all 0.2s; letter-spacing: 0.04em; }
-.ltb.on { background: var(--gold-mid); color: #fff; }
+.nav-link { font-size: 12px; color: rgba(255,255,255,0.65); text-decoration: none; font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s; }
+.nav-link:hover { color: #fff; }
+.lang-toggle { display: flex; gap: 3px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 3px; }
+.ltb { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 16px; cursor: pointer; border: none; background: transparent; color: rgba(255,255,255,0.6); font-family: var(--sans); transition: all 0.2s; letter-spacing: 0.04em; }
+.ltb.on { background: var(--teal); color: var(--navy-deep); }
 
-/* ── HERO ── */
+/* HERO */
 .hero {
-  min-height: 65vh; background: var(--navy);
+  min-height: 72vh; background: var(--navy);
   display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 0 56px 48px; position: relative; overflow: hidden;
+  padding: 0 56px 64px; position: relative; overflow: hidden;
 }
-
-/* animated gradient bg */
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse 60% 80% at 0% 50%, rgba(42,82,152,0.25) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 85% 15%, rgba(184,149,42,0.12) 0%, transparent 55%),
-    radial-gradient(ellipse 30% 50% at 70% 85%, rgba(42,82,152,0.1) 0%, transparent 50%);
+    radial-gradient(ellipse 60% 80% at 0% 50%, rgba(96,160,160,0.16) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 85% 15%, rgba(96,160,160,0.14) 0%, transparent 55%),
+    linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #1d3a5c 100%);
 }
 .hero-grid {
   position: absolute; inset: 0; pointer-events: none;
@@ -71,715 +129,527 @@ nav {
     linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
   background-size: 72px 72px;
 }
-/* big decorative text behind */
-.hero-ghost {
-  position: absolute; bottom: -40px; right: -20px;
-  font-family: 'Fraunces', serif; font-size: 320px; font-weight: 900;
-  color: rgba(255,255,255,0.015); line-height: 1; pointer-events: none;
-  letter-spacing: -0.04em; user-select: none;
-}
-.hero-line-v {
-  position: absolute; top: 0; bottom: 0; left: 52%;
-  width: 1px; pointer-events: none;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.04) 20%, rgba(255,255,255,0.04) 80%, transparent 100%);
-}
-
-.hero-inner {
-  position: relative; z-index: 2;
-  max-width: 1000px; margin: 0 auto; width: 100%;
-  padding-top: 100px;
-}
-
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
-
-/* CBDR big letters */
-.hero-cbdr { direction: ltr !important; unicode-bidi: isolate;
+.hero-rings { position: absolute; bottom: -90px; right: -60px; width: 520px; height: 380px; opacity: 0.07; pointer-events: none; }
+html[dir="rtl"] .hero-rings { right: auto; left: -60px; }
+.hero-inner { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; width: 100%; padding-top: 110px; }
+.hero-top { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 52px; }
+.hero-cbdr {
+  direction: ltr; unicode-bidi: isolate;
   font-family: 'Fraunces', serif; font-weight: 900;
   font-size: clamp(80px, 14vw, 180px);
-  line-height: 0.88; letter-spacing: -0.04em;
-  margin-bottom: 0; display: flex; align-items: baseline; gap: 0;
+  line-height: 0.88; letter-spacing: -0.04em; display: flex; align-items: baseline;
 }
-.hero-cbdr .lc { color: var(--gold-bright); }
-.hero-cbdr .ln { color: rgba(255,255,255,0.9); }
-.hero-cbdr .ld { color: var(--gold-bright); }
-.hero-cbdr .lr { color: rgba(255,255,255,0.35); }
-
-/* slogan */
-.hero-slogan-block { margin-bottom: 44px; }
-body.L-he .hero-slogan-l1,
-body.L-he .hero-slogan-l2 { direction: rtl; text-align: right; unicode-bidi: isolate; }
-.hero-slogan-l1 {
-  font-family: 'Fraunces', serif;
-  font-size: clamp(26px, 4vw, 48px);
-  font-weight: 300; font-style: italic;
-  color: rgba(255,255,255,0.92); line-height: 1.15; margin-bottom: 8px;
-}
-.hero-slogan-l2 {
-  font-family: 'Fraunces', serif;
-  font-size: clamp(16px, 2.2vw, 28px);
-  font-weight: 300; font-style: italic;
-  color: rgba(255,255,255,0.38); line-height: 1.3;
-}
-.hero-slogan-l2 em { color: var(--gold-bright); font-style: italic; }
-
-.hero-desc {
-  font-size: 14px; color: rgba(255,255,255,0.42);
-  font-weight: 300; line-height: 1.85; max-width: 480px; margin-bottom: 40px;
-}
-
-.hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 64px; }
-.btn-gold {
+.hero-cbdr .lc, .hero-cbdr .ld { color: var(--teal-bright); }
+.hero-cbdr .ln { color: rgba(255,255,255,0.92); }
+.hero-cbdr .lr { color: rgba(255,255,255,0.4); }
+h1.hero-slogan { font-family: var(--serif); font-weight: 300; font-style: italic; line-height: 1.15; }
+.hero-slogan .l1 { display: block; font-size: clamp(28px, 4vw, 48px); color: rgba(255,255,255,0.95); margin-bottom: 6px; }
+.hero-slogan .l2 { display: block; font-size: clamp(28px, 4vw, 48px); color: var(--teal-bright); }
+.hero-desc { text-align: center; max-width: 720px; margin: 0 auto 40px; font-size: 16px; color: rgba(255,255,255,0.72); font-weight: 300; line-height: 1.9; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.btn-main {
   display: inline-flex; align-items: center; gap: 8px;
-  background: var(--gold-mid); color: #fff;
-  font-size: 13.5px; font-weight: 600; padding: 13px 26px;
-  border-radius: 10px; text-decoration: none; transition: opacity 0.2s;
+  background: var(--teal); color: var(--navy-deep);
+  font-size: 14px; font-weight: 600; padding: 14px 28px;
+  border-radius: 10px; text-decoration: none; transition: background 0.2s;
 }
-.btn-gold:hover { opacity: 0.88; }
+.btn-main:hover { background: var(--teal-bright); }
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 8px;
-  background: transparent; color: rgba(255,255,255,0.5);
-  border: 1px solid rgba(255,255,255,0.14);
-  font-size: 13.5px; font-weight: 500; padding: 13px 26px;
+  background: transparent; color: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.22);
+  font-size: 14px; font-weight: 500; padding: 14px 28px;
   border-radius: 10px; text-decoration: none; transition: all 0.2s;
 }
-.btn-ghost:hover { border-color: rgba(255,255,255,0.35); color: #fff; }
+.btn-ghost:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
 
-.hero-chips { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.06); }
-.chip { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 7px; padding: 6px 13px; font-size: 11.5px; color: rgba(255,255,255,0.42); }
-
-/* ── STORY ── */
-.story-wrap {
-  background: var(--navy2);
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  padding: 96px 56px; position: relative; overflow: hidden;
-}
-.story-wrap::before {
-  content: '"';
-  position: absolute; top: -40px; left: 40px;
-  font-family: 'Fraunces', serif; font-size: 400px; font-weight: 900;
-  color: rgba(255,255,255,0.015); line-height: 1; pointer-events: none; user-select: none;
-}
+/* DARK BAND (about) */
+.story-wrap { background: var(--navy2); padding: 96px 56px; position: relative; overflow: hidden; }
 .story-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
-.story-tag {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 10px; font-weight: 600; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--gold-mid); margin-bottom: 36px;
-}
-.story-tag::before { content: ''; width: 20px; height: 1px; background: var(--gold-mid); display: inline-block; }
-.story-headline {
-  font-family: 'Fraunces', serif;
-  font-size: clamp(28px, 4vw, 46px);
-  font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 8px;
-}
-.story-headline-2 {
-  font-family: 'Fraunces', serif;
-  font-size: clamp(16px, 2.5vw, 26px);
-  font-weight: 300; font-style: italic;
-  color: rgba(255,255,255,0.35); margin-bottom: 48px;
-}
-.story-headline-2 em { color: var(--gold-bright); font-style: italic; }
-.story-body p {
-  font-size: 15px; color: rgba(255,255,255,0.5);
-  font-weight: 300; line-height: 1.95; margin-bottom: 22px;
-}
-.story-body p strong { color: rgba(255,255,255,0.85); font-weight: 500; }
-.story-body p em { color: var(--gold-bright); font-style: italic; }
-.story-closer {
-  margin-top: 40px; padding-top: 36px;
-  border-top: 1px solid rgba(255,255,255,0.07);
-  font-family: 'Fraunces', serif;
-  font-size: clamp(18px, 2.5vw, 26px);
-  font-weight: 700; color: #fff; line-height: 1.3;
-}
-.story-closer em { color: var(--gold-bright); font-style: normal; }
+.story-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-bright); margin-bottom: 32px; }
+.story-tag::before { content: ''; width: 20px; height: 1px; background: var(--teal-bright); display: inline-block; }
+.story-headline { font-family: var(--serif); font-size: clamp(28px, 4vw, 46px); font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 8px; }
+.story-headline-2 { font-family: var(--serif); font-size: clamp(18px, 2.5vw, 26px); font-weight: 300; font-style: italic; color: var(--teal-bright); margin-bottom: 44px; }
+.story-body p { font-size: 16px; color: rgba(255,255,255,0.75); font-weight: 300; line-height: 1.95; margin-bottom: 22px; }
+.story-closer { margin-top: 36px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); font-family: var(--serif); font-size: clamp(18px, 2.5vw, 26px); font-weight: 700; color: #fff; line-height: 1.3; }
+.story-closer em { color: var(--teal-bright); font-style: normal; }
 
-/* ── LAYOUT ── */
+/* LAYOUT */
 .wrap { max-width: 980px; margin: 0 auto; padding: 96px 56px; }
 .bg-off { background: var(--off); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-hr.sep { border: none; border-top: 1px solid var(--border); margin: 0 56px; }
+.stag { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-dark); margin-bottom: 14px; }
+.stag::before { content: ''; width: 20px; height: 1.5px; background: var(--teal-dark); display: inline-block; }
+h2.stitle { font-family: var(--serif); font-size: clamp(28px, 4vw, 46px); font-weight: 700; color: var(--navy); line-height: 1.1; margin-bottom: 12px; }
+h2.stitle em { font-style: italic; font-weight: 300; color: var(--teal-dark); }
+p.sdesc { font-size: 16px; color: var(--muted); font-weight: 300; line-height: 1.85; max-width: 600px; margin-bottom: 48px; }
 
-.stag { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
-.stag::before { content: ''; width: 20px; height: 1.5px; background: var(--blue); display: inline-block; }
-h2.stitle { font-family: 'Fraunces', serif; font-size: clamp(28px, 4vw, 46px); font-weight: 700; color: var(--navy); line-height: 1.08; margin-bottom: 12px; }
-h2.stitle em { font-style: italic; font-weight: 300; color: var(--gold); }
-p.sdesc { font-size: 15px; color: var(--muted); font-weight: 300; line-height: 1.85; max-width: 560px; margin-bottom: 48px; }
-
-/* ── TRACKS ── */
-.tracks { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.track { border-radius: 20px; padding: 36px 30px 58px; position: relative; overflow: hidden; }
-.t01 { background: var(--blue-soft); border: 1.5px solid #bfd0f8; }
-.t02 { background: var(--gold-light); border: 1.5px solid #e8d49a; }
-.track-bg { font-family: 'Fraunces', serif; font-size: 120px; font-weight: 900; position: absolute; bottom: -22px; left: 16px; line-height: 1; user-select: none; pointer-events: none; }
-.t01 .track-bg { color: rgba(26,80,214,.06); }
-.t02 .track-bg { color: rgba(184,114,14,.08); }
-.track-pill { display: inline-block; font-size: 9.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
-.t01 .track-pill { background: rgba(26,80,214,.1); color: var(--blue); }
-.t02 .track-pill { background: rgba(184,114,14,.12); color: var(--gold); }
-.track-title { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
-.track-desc { font-size: 14px; color: var(--muted); line-height: 1.8; position: relative; z-index: 1; }
-
-/* ── SERVICES ── */
+/* SERVICES */
 .srv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.srv-grid .srv:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: calc(50% - 8px); margin: 0 auto; width: 100%; }
-.srv {
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 16px; padding: 28px 24px;
-  transition: all 0.28s; position: relative; overflow: hidden;
-}
-.srv::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-  height: 2px; background: linear-gradient(to right, var(--gold), var(--gold-bright));
-  transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;
-}
-.srv:hover { border-color: #c0ccec; box-shadow: 0 16px 48px rgba(26,80,214,.09); transform: translateY(-4px); }
+.srv { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; transition: all 0.28s; position: relative; overflow: hidden; }
+.srv::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--navy), var(--teal)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+.srv:hover { border-color: #b9d3d3; box-shadow: 0 16px 48px rgba(21,38,68,.09); transform: translateY(-4px); }
 .srv:hover::after { transform: scaleX(1); }
-.srv-ico { font-size: 28px; margin-bottom: 16px; display: block; }
-.srv-t { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
-.srv-d { font-size: 13px; color: var(--muted); line-height: 1.78; font-weight: 300; }
+.srv-num { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 700; color: var(--teal-dark); letter-spacing: 0.1em; margin-bottom: 14px; display: block; }
+.srv-t { font-size: 17px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+.srv-d { font-size: 14px; color: var(--muted); line-height: 1.78; font-weight: 300; }
+.srv.open { background: var(--teal-soft); border-color: #c5dddd; }
 
-/* ── WHO ── */
+/* WHO */
 .who-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-.who-card { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 32px 22px; text-align: center; transition: box-shadow 0.2s; }
-.who-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,.07); }
-.who-ico { font-size: 34px; display: block; margin-bottom: 16px; }
-.who-t { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 9px; }
-.who-d { font-size: 13px; color: var(--muted); line-height: 1.75; font-weight: 300; }
+.who-card { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; transition: box-shadow 0.2s; }
+.who-card:hover { box-shadow: 0 8px 28px rgba(21,38,68,.08); }
+.who-t { font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--navy); margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid var(--teal); display: inline-block; }
+.who-d { font-size: 14px; color: var(--muted); line-height: 1.75; font-weight: 300; }
 
-/* ── PROCESS ── */
+/* PROCESS */
 .process { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; margin-top: 8px; }
-.process::before {
-  content: ''; position: absolute;
-  top: 27px; left: 12%; right: 12%; height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-mid) 30%, var(--gold-mid) 70%, transparent);
-}
+.process::before { content: ''; position: absolute; top: 27px; left: 12%; right: 12%; height: 1px; background: linear-gradient(to right, transparent, var(--teal) 30%, var(--teal) 70%, transparent); }
 .pstep { text-align: center; padding: 0 12px; }
-.pstep-num {
-  width: 54px; height: 54px; border-radius: 50%;
-  background: var(--navy); border: 1.5px solid var(--gold-mid);
-  color: var(--gold-bright); font-family: 'Fraunces', serif;
-  font-size: 18px; font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 20px; position: relative; z-index: 1;
-}
-.pstep-t { font-family: 'Fraunces', serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-.pstep-d { font-size: 12px; color: var(--muted); line-height: 1.65; font-weight: 300; }
+.pstep-num { width: 54px; height: 54px; border-radius: 50%; background: var(--navy); border: 1.5px solid var(--teal); color: var(--teal-bright); font-family: 'Fraunces', serif; font-size: 18px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; position: relative; z-index: 1; }
+.pstep-t { font-family: var(--serif); font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.pstep-d { font-size: 13.5px; color: var(--muted); line-height: 1.65; font-weight: 300; }
 
-/* ── TYPES ── */
-.types-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-.typ { border-radius: 18px; padding: 32px 22px; text-align: center; border: 1.5px solid var(--border); background: var(--white); transition: all 0.22s; }
-.typ:hover { border-color: #b8c8ec; box-shadow: 0 10px 30px rgba(26,80,214,.07); transform: translateY(-3px); }
-.typ-ico { font-size: 30px; display: block; margin-bottom: 16px; }
-.typ-n { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 9px; }
-.typ-d { font-size: 13px; color: var(--muted); line-height: 1.7; font-weight: 300; }
+/* FOUNDER */
+.founder { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
+.founder-name { font-family: var(--serif); font-size: 26px; font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 6px; }
+.founder-role { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-dark); margin-bottom: 18px; }
+.founder-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--teal); padding-bottom: 2px; }
+.founder-link:hover { color: var(--teal-dark); }
+.founder-body p { font-size: 16px; color: var(--muted); font-weight: 300; line-height: 1.9; margin-bottom: 18px; }
+.founder-body p:last-child { margin-bottom: 0; }
 
-/* ── CTA ── */
-.cta-wrap {
-  background: var(--navy); padding: 110px 56px;
-  text-align: center; position: relative; overflow: hidden;
-}
-.cta-wrap::before { content: ''; position: absolute; top: -180px; right: -180px; width: 600px; height: 600px; border-radius: 50%; background: #1a3fa8; opacity: .14; pointer-events: none; }
-.cta-wrap::after { content: ''; position: absolute; bottom: -140px; left: -140px; width: 420px; height: 420px; border-radius: 50%; background: var(--gold); opacity: .07; pointer-events: none; }
+/* CASE STUDIES (section is commented out in the HTML until real content is ready) */
+.case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.case { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 30px 26px; }
+.case-client { font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+.case-l { font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal-dark); margin: 14px 0 4px; }
+.case-p { font-size: 14px; color: var(--muted); line-height: 1.75; font-weight: 300; }
+
+/* CONTACT */
+.contact-box { max-width: 640px; margin: 0 auto; text-align: center; }
+.contact-box .stag { justify-content: center; }
+.contact-box p.sdesc { max-width: 100%; margin-bottom: 32px; }
+#booking-form { background: var(--off); border: 1px solid var(--border); border-radius: 20px; padding: 36px; text-align: start; }
+.fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.frow { margin-bottom: 14px; }
+.flabel { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 6px; letter-spacing: 0.06em; }
+.finput { width: 100%; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-family: inherit; background: var(--white); color: var(--text); transition: border-color 0.2s; }
+.finput:focus { border-color: var(--teal-dark); outline: none; }
+textarea.finput { resize: vertical; }
+.ftypes { display: flex; gap: 10px; }
+.ftype { flex: 1; display: flex; align-items: center; gap: 8px; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; background: var(--white); font-size: 14px; transition: border-color 0.2s; }
+.ftype:has(input:checked) { border-color: var(--teal-dark); }
+.ftype input { accent-color: var(--teal-dark); }
+.fsubmit { width: 100%; margin-top: 10px; padding: 14px; background: var(--navy); color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; font-family: inherit; cursor: pointer; transition: background 0.2s; }
+.fsubmit:hover { background: var(--navy2); }
+.fnote { margin-top: 14px; font-size: 13px; color: var(--muted); text-align: center; }
+.fnote a { color: var(--teal-dark); font-weight: 600; }
+#booking-success { display: none; background: var(--teal-soft); border: 1.5px solid #c5dddd; border-radius: 20px; padding: 44px 36px; text-align: center; }
+.succ-t { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.succ-d { font-size: 15px; color: var(--muted); font-weight: 300; line-height: 1.8; }
+.succ-d a { color: var(--teal-dark); font-weight: 600; }
+
+/* CTA */
+.cta-wrap { background: var(--navy); padding: 104px 56px; text-align: center; position: relative; overflow: hidden; }
+.cta-wrap::before { content: ''; position: absolute; top: -180px; right: -180px; width: 600px; height: 600px; border-radius: 50%; background: var(--teal); opacity: .08; pointer-events: none; }
+.cta-wrap::after { content: ''; position: absolute; bottom: -140px; left: -140px; width: 420px; height: 420px; border-radius: 50%; background: var(--teal); opacity: .05; pointer-events: none; }
 .cta-inner { position: relative; z-index: 1; }
-.cta-pre { font-family: 'Fraunces', serif; font-size: clamp(16px, 2vw, 22px); font-style: italic; font-weight: 300; color: rgba(255,255,255,0.35); margin-bottom: 8px; }
-.cta-pre em { color: var(--gold-bright); }
-.cta-t { font-family: 'Fraunces', serif; font-size: clamp(36px, 5.5vw, 62px); font-weight: 900; color: #fff; line-height: 1.04; margin-bottom: 20px; }
-.cta-t em { font-style: italic; font-weight: 300; color: var(--gold-bright); }
-.cta-s { font-size: 15px; color: rgba(255,255,255,0.35); font-weight: 300; margin-bottom: 44px; line-height: 1.9; }
-.cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--gold-mid); color: #fff; font-size: 15px; font-weight: 600; padding: 16px 36px; border-radius: 12px; text-decoration: none; transition: opacity 0.2s; }
-.cta-btn:hover { opacity: 0.88; }
+.cta-t { font-family: var(--serif); font-size: clamp(34px, 5.5vw, 60px); font-weight: 900; color: #fff; line-height: 1.08; margin-bottom: 20px; }
+.cta-t em { font-style: italic; font-weight: 300; color: var(--teal-bright); }
+.cta-s { font-size: 16px; color: rgba(255,255,255,0.7); font-weight: 300; margin-bottom: 40px; line-height: 1.9; }
 
-/* ── FOOTER ── */
-footer { background: #080f1e; padding: 40px 56px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-.foot-left {}
-.foot-abbr { direction: ltr !important; unicode-bidi: isolate; font-family: 'Fraunces', serif; font-size: 22px; font-weight: 900; color: #fff; letter-spacing: 0.06em; margin-bottom: 4px; }
-.foot-abbr .g { color: var(--gold-bright); }
-.foot-slogan { font-size: 11px; color: rgba(255,255,255,0.18); font-style: italic; }
-.foot-right { font-size: 11px; color: rgba(255,255,255,0.15); text-align: right; line-height: 1.7; }
+/* FOOTER */
+footer { background: var(--navy-deep); padding: 40px 56px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.foot-abbr { direction: ltr; unicode-bidi: isolate; font-family: 'Fraunces', serif; font-size: 22px; font-weight: 900; color: #fff; letter-spacing: 0.06em; margin-bottom: 4px; }
+.foot-abbr .g { color: var(--teal-bright); }
+.foot-slogan { font-size: 12px; color: rgba(255,255,255,0.6); font-style: italic; }
+.foot-right { font-size: 12.5px; color: rgba(255,255,255,0.6); text-align: end; line-height: 2; }
+.foot-right a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(134,194,194,0.6); }
+.foot-right a:hover { color: var(--teal-bright); }
+.foot-dot { margin: 0 8px; opacity: 0.4; }
 
-/* ── LANG ── */
-/* no lang switch */
-
-@media(max-width:700px){
-  nav{padding:0 20px;} .nav-tagline,.nav-sep{display:none;}
-  .hero{padding:0 24px 56px;}
-  .story-wrap{padding:64px 24px;}
-  .wrap{padding:60px 24px;}
-  hr.sep{margin:0 24px;}
-  .tracks,.srv-grid,.who-grid,.types-grid,.process{grid-template-columns:1fr;}
-
-  .process::before{display:none;}
-  .cta-wrap{padding:64px 24px;}
-  footer{padding:24px;}
-  .hero-ghost{display:none;}
-  .hero-inner{grid-template-columns:1fr;}
-  .hero-right{align-items:flex-start;}
-
+@media (max-width: 760px) {
+  nav { padding: 0 20px; }
+  .nav-tagline, .nav-sep, .nav-link { display: none; }
+  .hero { padding: 0 24px 56px; min-height: 0; }
+  .hero-inner { padding-top: 100px; }
+  .hero-top { grid-template-columns: 1fr; gap: 28px; margin-bottom: 36px; }
+  .hero-rings { display: none; }
+  .story-wrap { padding: 64px 24px; }
+  .wrap { padding: 60px 24px; }
+  .srv-grid, .who-grid, .process, .case-grid, .founder, .fgrid { grid-template-columns: 1fr; }
+  .process { gap: 28px; }
+  .process::before { display: none; }
+  .founder { gap: 24px; }
+  #booking-form { padding: 24px 18px; }
+  .cta-wrap { padding: 64px 24px; }
+  footer { padding: 28px 24px; }
+  .foot-right { text-align: start; }
 }
 </style>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="CBDR — Cross-Border Development & Representation. We help Israeli companies expand internationally and bring global companies into Israel. B2B sales, procurement, partnerships, client management and process improvement.">
-  <meta name="keywords" content="cross border business development, international business representation, B2B sales Israel, business development Israel, global market entry, procurement outsourcing, international expansion, Israeli companies abroad, foreign companies Israel, business representative Israel">
-  <meta name="author" content="CBDR - Niv Karo">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://cbdr-consulting.com">
-
-  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cbdr-consulting.com">
-  <meta property="og:title" content="CBDR | Cross-Border Development & Representation">
-  <meta property="og:description" content="Money is everywhere. The question is — where is it hiding? We represent companies in international markets. B2B sales, procurement, partnerships and process improvement.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="he_IL">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CBDR | Cross-Border Development & Representation">
-  <meta name="twitter:description" content="We connect Israeli businesses to the world and bring the world to Israel. B2B sales, procurement, partnerships and process improvement.">
-
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "CBDR - Cross-Border Development & Representation",
-    "url": "https://cbdr-consulting.com",
-    "email": "niv@cbdr-consulting.com",
-    "description": "Cross-border business development and representation. Helping Israeli companies expand internationally and bringing global companies into Israel.",
-    "slogan": "Money is everywhere. The question is — where is it hiding?",
-    "areaServed": ["Israel", "United States", "Europe"],
-    "serviceType": [
-      "International Business Development",
-      "B2B Sales Representation",
-      "Procurement Management",
-      "Strategic Partnerships",
-      "Process Improvement"
-    ],
-    "knowsLanguage": ["Hebrew", "English"]
-  }
-  </script>
 </head>
-<body class="L-">
+<body>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">
+  <a href="#top" class="nav-logo" aria-label="CBDR">
     <div class="nav-abbr"><span class="g">C</span>B<span class="g">D</span>R</div>
     <div class="nav-sep"></div>
-    <div class="nav-tagline">Cross-Border Development & Representation</div>
-    
-  </div>
+    <div class="nav-tagline"><span class="t-en">Your Business, Your Peace of Mind</span><span class="t-he">העסק שלכם, השקט הנפשי שלכם</span></div>
+  </a>
   <div class="nav-right">
-    <a href="#story" class="nav-link"><span class="t-en">Our Story</span><span class="t-he" style="display:none">הסיפור שלנו</span></a>
-    
-    <a href="#services" class="nav-link"><span class="t-en">Our Services</span><span class="t-he" style="display:none">השירותים שלנו</span></a>
-    
-    <a href="#process" class="nav-link"><span class="t-en">Process</span><span class="t-he" style="display:none">תהליך</span></a>
-    
-    <a href="#contact" class="nav-link"><span class="t-en">Contact</span><span class="t-he" style="display:none">צור קשר</span></a>
-    
-    <div class="lang-toggle">
-      <button class="ltb on" onclick="setL('en')">EN</button>
-      <button class="ltb" onclick="setL('he')">עב</button>
+    <a href="#about" class="nav-link"><span class="t-en">About</span><span class="t-he">מי אנחנו</span></a>
+    <a href="#services" class="nav-link"><span class="t-en">Services</span><span class="t-he">שירותים</span></a>
+    <a href="#process" class="nav-link"><span class="t-en">How We Work</span><span class="t-he">איך עובדים</span></a>
+    <a href="#founder" class="nav-link"><span class="t-en">Founder</span><span class="t-he">המייסד</span></a>
+    <a href="#contact" class="nav-link"><span class="t-en">Contact</span><span class="t-he">צור קשר</span></a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button class="ltb on" data-l="en" onclick="setL('en')">EN</button>
+      <button class="ltb" data-l="he" onclick="setL('he')">עב</button>
     </div>
   </div>
 </nav>
+
+<main id="top">
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
-  <div class="hero-ghost">$</div>
+  <svg class="hero-rings" viewBox="0 0 520 380" fill="none" aria-hidden="true">
+    <circle cx="190" cy="190" r="150" stroke="#fff" stroke-width="34"/>
+    <circle cx="330" cy="190" r="150" stroke="#86c2c2" stroke-width="34"/>
+  </svg>
   <div class="hero-inner">
-
-    <!-- Row 1: CBDR left | Slogan right — same height -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;direction:ltr;margin-bottom:56px;">
-
-      <!-- LEFT: CBDR big -->
-      <div class="hero-cbdr" style="justify-content:flex-start;">
+    <div class="hero-top">
+      <div class="hero-cbdr" aria-hidden="true">
         <span class="lc">C</span><span class="ln">B</span><span class="ld">D</span><span class="lr">R</span>
       </div>
-
-      <!-- RIGHT: Slogan -->
-      <div style="direction:ltr;">
-        <div class="hero-slogan-l1"><span class="t-en">Money is everywhere.</span><span class="t-he" style="display:none;direction:rtl;unicode-bidi:isolate;">הכסף נמצא בכל מקום.</span></div>
-        <div class="hero-slogan-l2" style="margin-top:8px;"><span class="t-en">The question is — <em>where is it hiding?</em></span><span class="t-he" style="display:none;direction:rtl;unicode-bidi:isolate;">השאלה היא — <em>איפה הוא מתחבא?</em></span></div>
-      </div>
-
+      <h1 class="hero-slogan">
+        <span class="t-en"><span class="l1">Your Business,</span><span class="l2">Your Peace of Mind.</span></span>
+        <span class="t-he"><span class="l1">העסק שלכם,</span><span class="l2">השקט הנפשי שלכם.</span></span>
+      </h1>
     </div>
-
-    <!-- Row 2: Description centered -->
-    <div style="text-align:center;max-width:720px;margin:0 auto 44px;direction:ltr;">
-      <p class="hero-desc" style="max-width:100%;margin-bottom:0;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.9;">
-        <span class="t-en">We represent companies in international markets, connecting Israeli businesses to the world and bringing the world to Israel. Procurement, partnerships, ongoing client management, operational development and process improvement — these are part of our capabilities.</span>
-        <span class="t-he" style="display:none">אנחנו מייצגים חברות בשווקים בינלאומיים, מחברים בין עסקים ישראליים לעולם ובין העולם לישראל. רכש, שותפויות, ניהול לקוחות שוטף, פיתוח תפעולי ושיפור תהליכים — אלה חלק מהיכולות שלנו.</span>
-      </p>
+    <p class="hero-desc">
+      <span class="t-en">Senior operational support for businesses, organizations, and individuals, wherever and whenever you need it. We step in, find where the real pain is, and fix it.</span>
+      <span class="t-he">ליווי תפעולי בכיר לעסקים, לארגונים ולאנשים פרטיים, בכל מקום ובכל זמן שצריך. אנחנו נכנסים, מאתרים איפה הכאב האמיתי, ומטפלים בו.</span>
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-main"><span class="t-en">Let's talk →</span><span class="t-he">בואו נדבר ←</span></a>
+      <a href="#services" class="btn-ghost"><span class="t-en">See services</span><span class="t-he">השירותים שלנו</span></a>
     </div>
-
-    <!-- Row 3: CTAs centered -->
-    <div class="hero-ctas" style="justify-content:center;">
-      <a href="#contact" class="btn-gold"><span class="t-en">Let's talk →</span><span class="t-he" style="display:none">בואו נדבר ←</span></a>
-      <a href="#services" class="btn-ghost"><span class="t-en">See services</span><span class="t-he" style="display:none">השירותים שלנו</span></a>
-    </div>
-
-  </div></section>
-
-<!-- STORY -->
-<section class="story-wrap" id="story">
-  <div class="story-inner">
-    <div class="story-tag">
-      <span class="t-en">How CBDR was born</span>
-      <span class="t-he" style="display:none">איך נולד CBDR</span>
-    </div>
-    <div class="story-headline">
-      <span class="t-en">Money is everywhere.</span>
-      <span class="t-he" style="display:none;direction:rtl;unicode-bidi:isolate;">הכסף נמצא בכל מקום.</span>
-    </div>
-    <div class="story-headline-2">
-      <span class="t-en">The question is — <em>where is it hiding?</em></span>
-      <span class="t-he" style="display:none;direction:rtl;unicode-bidi:isolate;">השאלה היא — <em>איפה הוא מתחבא?</em></span>
-    </div>
-    <div class="story-body">
-      <p>
-        <span class="t-en">From as far back as I can remember, my mind has worked one way: walk into a room, see a process and immediately see how to make it leaner. See a cost and immediately see how to bring it down. Not because I'm smarter than anyone else. Because my mind is built to see what others walk past.</span>
-        <span class="t-he" style="display:none">מאז שאני זוכר את עצמי, הראש עובד ככה: נכנס לחדר, רואה תהליך ומיד רואה איך לקצר אותו. לא כי אני חכם יותר. כי הראש שלי בנוי לראות את מה שאחרים עוברים לידו.</span>
-      </p>
-      <p>
-        <span class="t-en">The global dimension came from life itself, not from a degree or a course. From cultures learned to read, markets learned to navigate, and the understanding that business between people — anywhere in the world — is built on trust before everything else.</span>
-        <span class="t-he" style="display:none">הגלובליות הגיעה מהחיים עצמם, לא מתואר ולא מקורס. מתרבויות שלמדתי לקרוא, משווקים שלמדתי לנווט, ומהבנה שעסקים בין אנשים — בכל מקום בעולם — בנויים על אמון לפני הכל.</span>
-      </p>
-      <p>
-        <span class="t-en">In every industry, every market, every supply chain — <em>there is money that isn't moving.</em> CBDR was built to find it.</span>
-        <span class="t-he" style="display:none">בכל תחום, כל שוק, כל שרשרת אספקה — <em>יש כסף שלא זז.</em> CBDR נבנה כדי למצוא אותו.</span>
-      </p>
-    </div>
-
   </div>
 </section>
 
-<hr class="sep">
+<!-- ABOUT -->
+<section class="story-wrap" id="about">
+  <div class="story-inner">
+    <div class="story-tag"><span class="t-en">Who we are</span><span class="t-he">מי אנחנו</span></div>
+    <h2 class="story-headline"><span class="t-en">Senior operational support.</span><span class="t-he">ליווי תפעולי בכיר.</span></h2>
+    <div class="story-headline-2"><span class="t-en">Without hiring another department.</span><span class="t-he">בלי לגייס מחלקה נוספת.</span></div>
+    <div class="story-body">
+      <p>
+        <span class="t-en">CBDR partners with businesses, organizations, and individuals who need senior operational support without hiring another department.</span>
+        <span class="t-he">CBDR מלווה עסקים, ארגונים ואנשים פרטיים שצריכים יכולת תפעולית בכירה, בלי לגייס מחלקה נוספת.</span>
+      </p>
+      <p>
+        <span class="t-en">We step in, diagnose where the real pain is, and fix the 20% that drives 80% of the result: global client management and retention, process and resource optimization, procurement, strategic partnerships, B2B sales development, and whatever else the situation calls for.</span>
+        <span class="t-he">אנחנו נכנסים, מאבחנים איפה הכאב האמיתי, ומטפלים ב-20% שמייצרים 80% מהתוצאה: ניהול ושימור לקוחות גלובליים, ייעול תהליכים ומשאבים, רכש, שותפויות אסטרטגיות, פיתוח מכירות B2B, וכל דבר אחר שהמצב דורש.</span>
+      </p>
+    </div>
+    <div class="story-closer">
+      <span class="t-en">Whatever the challenge, you get one thing back: <em>peace of mind.</em></span>
+      <span class="t-he">לא משנה מה האתגר, דבר אחד חוזר אליכם: <em>שקט נפשי.</em></span>
+    </div>
+  </div>
+</section>
 
 <!-- SERVICES -->
-<div class="wrap" id="services">
-  <div class="stag"><span class="t-en">Our Services</span><span class="t-he" style="display:none">השירותים שלנו</span></div>
-  <h2 class="stitle"><span class="t-en">What We <em>do</em></span><span class="t-he" style="display:none">מה אנחנו <em>עושים</em></span></h2>
-  </h2>
-  <p class="sdesc"><span class="t-en">Full representation on your behalf — and a sharp eye for where the money is leaking. Every engagement, every market, every process.</span><span class="t-he" style="display:none">ייצוג מלא בשמכם — ועין חדה לאיפה הכסף בורח. בכל התקשרות, בכל שוק, בכל תהליך.</span></p>
-  
+<section class="wrap" id="services">
+  <div class="stag"><span class="t-en">Our Services</span><span class="t-he">השירותים שלנו</span></div>
+  <h2 class="stitle"><span class="t-en">Where we <em>step in</em></span><span class="t-he">איפה אנחנו <em>נכנסים</em></span></h2>
+  <p class="sdesc"><span class="t-en">These are the areas where our work shows up most often. They are a starting point, not a limit.</span><span class="t-he">אלה התחומים שבהם העבודה שלנו באה לידי ביטוי לרוב. זו נקודת פתיחה, לא גבול.</span></p>
+
   <div class="srv-grid">
     <div class="srv">
-      <span class="srv-ico">🤝</span>
-      <div class="srv-t"><span class="t-en">B2B Sales</span><span class="t-he" style="display:none">מכירות B2B</span></div>
-      <div class="srv-d"><span class="t-en">Reaching potential clients in the target market, managing the full sales process and closing deals on your behalf.</span><span class="t-he" style="display:none">יצירת קשר עם לקוחות פוטנציאליים, ניהול תהליכי מכירה וסגירת עסקאות בשם החברה — מהפנייה הראשונה ועד חתימה.</span></div>
-      
+      <span class="srv-num">01</span>
+      <h3 class="srv-t"><span class="t-en">Global Client Management and Retention</span><span class="t-he">ניהול ושימור לקוחות גלובליים</span></h3>
+      <p class="srv-d"><span class="t-en">Your international clients get a senior, consistent point of contact. Relationships are maintained, issues are handled early, and clients stay.</span><span class="t-he">הלקוחות הבינלאומיים שלכם מקבלים איש קשר בכיר וקבוע. הקשרים נשמרים, בעיות מטופלות מוקדם, והלקוחות נשארים.</span></p>
     </div>
     <div class="srv">
-      <span class="srv-ico">💬</span>
-      <div class="srv-t">Client Retention & Network</div>
-      <div class="srv-d"><span class="t-en">Maintaining ongoing relationships with existing clients, building trust, and managing your client network to ensure long-term loyalty and growth.</span><span class="t-he" style="display:none">שמירה על הקשר עם לקוחות קיימים, חיזוק האמון וניהול שוטף של רשת הלקוחות להבטחת נאמנות וצמיחה לאורך זמן.</span></div>
-      
+      <span class="srv-num">02</span>
+      <h3 class="srv-t"><span class="t-en">Process and Resource Optimization</span><span class="t-he">ייעול תהליכים ומשאבים</span></h3>
+      <p class="srv-d"><span class="t-en">We look at how the work actually gets done, find where time, money, and people are being wasted, and rebuild it leaner.</span><span class="t-he">אנחנו בוחנים איך העבודה מתבצעת בפועל, מאתרים איפה זמן, כסף ואנשים מתבזבזים, ובונים את זה מחדש בצורה רזה יותר.</span></p>
     </div>
     <div class="srv">
-      <span class="srv-ico">📦</span>
-      <div class="srv-t"><span class="t-en"><span class="t-en">Local &amp; International Procurement</span><span class="t-he" style="display:none">רכש מקומי ובינלאומי</span></span><span class="t-he" style="display:none">רכש</span></div>
-      <div class="srv-d"><span class="t-en">Full procurement management, local and international. Sourcing suppliers, negotiating terms, and managing the entire procurement chain as an outsourced service. Sharp focus on reducing production and operational costs.</span><span class="t-he" style="display:none">ניהול רכש מלא באאוטסורס, מקומי ובינלאומי. איתור ספקים, מו"מ וניהול שרשרת הרכש כולה. דגש על הוזלת עלויות ייצור ותפעול.</span></div>
-      
+      <span class="srv-num">03</span>
+      <h3 class="srv-t"><span class="t-en">Procurement</span><span class="t-he">רכש</span></h3>
+      <p class="srv-d"><span class="t-en">Supplier sourcing, negotiation, and management of the full procurement chain, local and international, with a sharp eye on cost and compliance.</span><span class="t-he">איתור ספקים, משא ומתן וניהול שרשרת הרכש כולה, בארץ ובעולם, עם עין חדה על עלויות ועמידה בדרישות.</span></p>
     </div>
     <div class="srv">
-      <span class="srv-ico">🔗</span>
-      <div class="srv-t"><span class="t-en">Strategic Partnerships</span><span class="t-he" style="display:none">פיתוח שותפויות</span></div>
-      <div class="srv-d"><span class="t-en">Identifying and building alliances with distributors, resellers, and strategic partners — creating the right ecosystem for sustainable growth in the target market.</span><span class="t-he" style="display:none">איתור ובניית שיתופי פעולה עם מפיצים, ריסלרים ושותפים אסטרטגיים — בניית האקוסיסטם הנכון לצמיחה בשוק היעד.</span></div>
-      
+      <span class="srv-num">04</span>
+      <h3 class="srv-t"><span class="t-en">Strategic Partnerships</span><span class="t-he">שותפויות אסטרטגיות</span></h3>
+      <p class="srv-d"><span class="t-en">Identifying and building the right alliances with distributors, resellers, and partners, and keeping them productive over time.</span><span class="t-he">איתור ובניית שיתופי הפעולה הנכונים עם מפיצים, משווקים ושותפים, ושמירה עליהם פוריים לאורך זמן.</span></p>
     </div>
     <div class="srv">
-      <span class="srv-ico">⚙️</span>
-      <div class="srv-t"><span class="t-en">Process Improvement</span><span class="t-he" style="display:none">ייעוץ ושיפור תהליכים</span></div>
-      <div class="srv-d"><span class="t-en">We walk into an organization and see what others don't: where costs are leaking, where processes are bloated, where revenue is being left on the table. Rebuilding operations leaner, faster, and more profitable. From procurement chains to manufacturing flows to international expansion strategy.</span><span class="t-he" style="display:none">אנחנו נכנסים לארגון ורואים מה שאחרים לא רואים: איפה העלויות בורחות, איפה התהליכים מנופחים, איפה ההכנסה מתאדה. בונים מחדש את הפעילות — רזה יותר, מהיר יותר, רווחי יותר. מרכש ועד ייצור, מתפעול ועד אסטרטגיית כניסה לשוק.</span></div>
+      <span class="srv-num">05</span>
+      <h3 class="srv-t"><span class="t-en">B2B Sales Development</span><span class="t-he">פיתוח מכירות B2B</span></h3>
+      <p class="srv-d"><span class="t-en">Reaching the right prospects, managing the sales process, and moving deals forward on your behalf.</span><span class="t-he">הגעה ללקוחות הפוטנציאליים הנכונים, ניהול תהליך המכירה וקידום עסקאות בשמכם.</span></p>
+    </div>
+    <div class="srv open">
+      <span class="srv-num">+</span>
+      <h3 class="srv-t"><span class="t-en">Whatever Else the Situation Calls For</span><span class="t-he">וכל דבר אחר שהמצב דורש</span></h3>
+      <p class="srv-d"><span class="t-en">Not every problem fits a category. If something in your operation is costing you sleep, tell us about it.</span><span class="t-he">לא כל בעיה נכנסת לקטגוריה. אם משהו בפעילות שלכם מדיר שינה מעיניכם, ספרו לנו.</span></p>
     </div>
   </div>
-</div>
-
-<hr class="sep">
+</section>
 
 <!-- WHO -->
-<div class="bg-off">
+<section class="bg-off">
   <div class="wrap">
-    <div class="stag"><span class="t-en">Who We Serve</span><span class="t-he" style="display:none">עם מי אנחנו עובדים</span></div>
-    <h2 class="stitle"><span class="t-en">Built for <em>both directions</em></span><span class="t-he" style="display:none">עובדים <em>בשני הכיוונים</em></span></h2>
-    </h2>
-    <p class="sdesc"><span class="t-en">CBDR operates as a two-way bridge — Israeli companies expanding globally, and international companies entering the Israeli market.</span><span class="t-he" style="display:none">CBDR פועל כגשר דו-כיווני — חברות ישראליות שמתרחבות לעולם, וחברות בינלאומיות שנכנסות לשוק הישראלי.</span></p>
-    
+    <div class="stag"><span class="t-en">Who We Serve</span><span class="t-he">עם מי אנחנו עובדים</span></div>
+    <h2 class="stitle"><span class="t-en">Built for <em>whoever needs it</em></span><span class="t-he">בנוי עבור <em>מי שצריך</em></span></h2>
+    <p class="sdesc"><span class="t-en">No size, age, or location filter. We work with clients anywhere in the world.</span><span class="t-he">בלי סינון לפי גודל, ותק או מיקום. אנחנו עובדים עם לקוחות בכל מקום בעולם.</span></p>
     <div class="who-grid">
       <div class="who-card">
-        <span class="who-ico">🇮🇱</span>
-        <div class="who-t"><span class="t-en">Israeli Companies Going Global</span><span class="t-he" style="display:none">חברות ישראליות שיוצאות לעולם</span></div>
-        <div class="who-d"><span class="t-en">SMBs and startups looking to enter international markets, find clients, and build distribution channels abroad.</span><span class="t-he" style="display:none">חברות קטנות ובינוניות וסטארטאפים שרוצים להיכנס לשווקים בינלאומיים, למצוא לקוחות ולבנות ערוצי הפצה בחו"ל.</span></div>
-        
+        <h3 class="who-t"><span class="t-en">Businesses</span><span class="t-he">עסקים</span></h3>
+        <p class="who-d"><span class="t-en">From young startups to companies decades in the making, with global clients to manage or operations that need to run leaner.</span><span class="t-he">מסטארטאפים צעירים ועד חברות ותיקות, עם לקוחות גלובליים שצריך לנהל או פעילות שצריכה לעבוד רזה יותר.</span></p>
       </div>
       <div class="who-card">
-        <span class="who-ico">🌍</span>
-        <div class="who-t"><span class="t-en">International Companies Entering Israel</span><span class="t-he" style="display:none">חברות זרות שנכנסות לישראל</span></div>
-        <div class="who-d"><span class="t-en">Foreign businesses that need a local representative who understands the Israeli market, culture, and business environment.</span><span class="t-he" style="display:none">חברות בינלאומיות שצריכות נציג מקומי שמבין את השוק הישראלי, את התרבות ואת סביבת העסקים.</span></div>
-        
+        <h3 class="who-t"><span class="t-en">Organizations</span><span class="t-he">ארגונים</span></h3>
+        <p class="who-d"><span class="t-en">Teams and institutions that need senior operational capability without adding headcount.</span><span class="t-he">צוותים ומוסדות שצריכים יכולת תפעולית בכירה בלי להגדיל את מצבת כוח האדם.</span></p>
       </div>
       <div class="who-card">
-        <span class="who-ico">⚙️</span>
-        <div class="who-t"><span class="t-en">Companies Optimizing Operations</span><span class="t-he" style="display:none">חברות שמשפרות פעילות קיימת</span></div>
-        <div class="who-d"><span class="t-en">Businesses already active internationally that want to sharpen their model, reduce costs, and maximize their existing market presence.</span><span class="t-he" style="display:none">חברות שכבר פועלות בחו"ל ורוצות לחדד את המודל, להוזיל עלויות ולמקסם את הנוכחות הקיימת בשוק.</span></div>
-        
+        <h3 class="who-t"><span class="t-en">Individuals</span><span class="t-he">אנשים פרטיים</span></h3>
+        <p class="who-d"><span class="t-en">Owners, founders, and professionals who need a trusted, senior hand on a specific challenge.</span><span class="t-he">בעלי עסקים, מייסדים ואנשי מקצוע שצריכים יד בכירה ואמינה לאתגר מסוים.</span></p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- PROCESS -->
-<div class="wrap" id="process">
-  <div class="stag"><span class="t-en">How It Works</span><span class="t-he" style="display:none">איך זה עובד</span></div>
-  <h2 class="stitle"><span class="t-en">A clear <em>process</em></span><span class="t-he" style="display:none">תהליך <em>ברור</em></span></h2>
-  </h2>
-  <p class="sdesc"><span class="t-en">Every engagement follows a structured process — built for clarity, speed, and results.</span><span class="t-he" style="display:none">כל שיתוף פעולה מתנהל לפי תהליך מובנה — ברור, מהיר ומכוון לתוצאות.</span></p>
-  
+<section class="wrap" id="process">
+  <div class="stag"><span class="t-en">How We Work</span><span class="t-he">איך אנחנו עובדים</span></div>
+  <h2 class="stitle"><span class="t-en">A clear <em>process</em></span><span class="t-he">תהליך <em>ברור</em></span></h2>
+  <p class="sdesc"><span class="t-en">Four steps, the same every time.</span><span class="t-he">ארבעה שלבים, אותו דבר בכל פעם.</span></p>
   <div class="process">
     <div class="pstep">
       <div class="pstep-num">1</div>
-      <div class="pstep-t"><span class="t-en">Discovery</span><span class="t-he" style="display:none">היכרות</span></div>
-      <div class="pstep-d"><span class="t-en">Understanding your business, goals, and target market.</span><span class="t-he" style="display:none">הבנת העסק, היעדים ושוק המטרה.</span></div>
-      
+      <h3 class="pstep-t"><span class="t-en">We learn</span><span class="t-he">לומדים</span></h3>
+      <p class="pstep-d"><span class="t-en">Your operation, your goals, and what is keeping you up at night.</span><span class="t-he">את הפעילות, את היעדים, ואת מה שמטריד אתכם.</span></p>
     </div>
     <div class="pstep">
       <div class="pstep-num">2</div>
-      <div class="pstep-t"><span class="t-en">Strategy</span><span class="t-he" style="display:none">אסטרטגיה</span></div>
-      <div class="pstep-d"><span class="t-en">Building a tailored entry or improvement plan together.</span><span class="t-he" style="display:none">בניית תוכנית מותאמת יחד.</span></div>
-      
+      <h3 class="pstep-t"><span class="t-en">We diagnose</span><span class="t-he">מאבחנים</span></h3>
+      <p class="pstep-d"><span class="t-en">We find where the real pain is.</span><span class="t-he">מאתרים איפה הכאב האמיתי.</span></p>
     </div>
     <div class="pstep">
       <div class="pstep-num">3</div>
-      <div class="pstep-t"><span class="t-en">Execution</span><span class="t-he" style="display:none">ביצוע</span></div>
-      <div class="pstep-d"><span class="t-en">Full representation — contacts, meetings, negotiations, deals.</span><span class="t-he" style="display:none">ייצוג מלא — קשרים, פגישות, מו"מ, עסקאות.</span></div>
-      
+      <h3 class="pstep-t"><span class="t-en">We fix</span><span class="t-he">מטפלים</span></h3>
+      <p class="pstep-d"><span class="t-en">The 20% that drives 80% of the result.</span><span class="t-he">ב-20% שמייצרים 80% מהתוצאה.</span></p>
     </div>
     <div class="pstep">
       <div class="pstep-num">4</div>
-      <div class="pstep-t"><span class="t-en">Results</span><span class="t-he" style="display:none">תוצאות</span></div>
-      <div class="pstep-d"><span class="t-en">Closed deals, new clients, optimized costs.</span><span class="t-he" style="display:none">עסקאות סגורות, לקוחות חדשים, עלויות מופחתות.</span></div>
-      
+      <h3 class="pstep-t"><span class="t-en">Peace of mind</span><span class="t-he">שקט נפשי</span></h3>
+      <p class="pstep-d"><span class="t-en">It is handled. You get back to what matters.</span><span class="t-he">זה מטופל. אתם חוזרים למה שחשוב.</span></p>
     </div>
   </div>
-</div>
+</section>
 
-<hr class="sep">
-
-<!-- TYPES -->
-<div class="bg-off">
+<!-- FOUNDER -->
+<section class="bg-off" id="founder">
   <div class="wrap">
-    <div class="stag"><span class="t-en">How We Work</span><span class="t-he" style="display:none">סוגי שירות</span></div>
-    <h2 class="stitle"><span class="t-en">Flexible by <em>design</em></span><span class="t-he" style="display:none">גמישות <em>מלאה</em></span></h2>
-    </h2>
-    <p class="sdesc"><span class="t-en">Every engagement is tailored to the company's needs, pace, and size.</span><span class="t-he" style="display:none">כל שיתוף פעולה מותאם לצרכים, לקצב ולגודל של כל חברה.</span></p>
-    
-    <div class="types-grid">
-      <div class="typ">
-        <span class="typ-ico">⏱</span>
-        <div class="typ-n"><span class="t-en">Hourly Consulting</span><span class="t-he" style="display:none">ייעוץ לפי שעה</span></div>
-        <div class="typ-d"><span class="t-en">Focused sessions for specific questions, decisions, and targeted guidance.</span><span class="t-he" style="display:none">סשנים ממוקדים לשאלות נקודתיות ותמיכה בהחלטות ספציפיות.</span></div>
-        
+    <div class="stag"><span class="t-en">Founder</span><span class="t-he">המייסד</span></div>
+    <div class="founder">
+      <div>
+        <h2 class="founder-name"><span class="t-en">Niv Karo</span><span class="t-he">ניב קארו</span></h2>
+        <div class="founder-role"><span class="t-en">Founder &amp; Owner</span><span class="t-he">מייסד ובעלים</span></div>
+        <a class="founder-link" href="https://www.linkedin.com/in/niv-karo-b4b01a26a" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
-      <div class="typ">
-        <span class="typ-ico">🚀</span>
-        <div class="typ-n"><span class="t-en">Defined Project</span><span class="t-he" style="display:none">פרויקט מוגדר</span></div>
-        <div class="typ-d"><span class="t-en">Clear goal, agreed timeline and fixed price. Full certainty for both sides.</span><span class="t-he" style="display:none">מטרה ברורה, לו"ז מוסכם ומחיר קבוע. ודאות מלאה לשני הצדדים.</span></div>
-        
-      </div>
-      <div class="typ">
-        <span class="typ-ico">📈</span>
-        <div class="typ-n"><span class="t-en">Success Fee</span><span class="t-he" style="display:none">עמלת הצלחה</span></div>
-        <div class="typ-d"><span class="t-en">Compensation tied to results — a percentage of every closed deal.</span><span class="t-he" style="display:none">תגמול לפי תוצאות — אחוז מכל עסקה שנסגרת.</span></div>
-        
+      <div class="founder-body">
+        <p>
+          <span class="t-en">I've spent my career in environments where there's no room for error: a background in Industrial Engineering and Management, a B.A. in Technology Management from Bar-Ilan University, four years in a senior procurement role in the defense industry, and years of managing global client relationships and business operations at a senior level.</span>
+          <span class="t-he">את הקריירה שלי עשיתי בסביבות שאין בהן מקום לטעות: רקע בהנדסת תעשייה וניהול, תואר ראשון בניהול טכנולוגיה מאוניברסיטת בר-אילן, ארבע שנים בתפקיד רכש בכיר בתעשייה הביטחונית, ושנים של ניהול קשרי לקוחות גלובליים ופעילות עסקית בדרג בכיר.</span>
+        </p>
+        <p>
+          <span class="t-en">I'm also an FAA instrument rated pilot, another world built on precision and staying calm under pressure. I founded CBDR to bring that same standard to every client.</span>
+          <span class="t-he">אני גם טייס בעל הגדר מכשירים של ה-FAA, עוד עולם שבנוי כולו על דיוק ועל קור רוח תחת לחץ. הקמתי את CBDR כדי להביא את אותו סטנדרט לכל לקוח.</span>
+        </p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- CASE STUDIES
+     Hidden until real, client-approved content is ready.
+     To publish: fill in the text below, then delete this opening comment line block and the closing one.
 
-<!-- BOOKING -->
-<div class="wrap" id="contact">
-  <div style="max-width:640px;margin:0 auto;text-align:center;">
-    <div class="stag" style="justify-content:center;"><span class="t-en">Schedule a Meeting</span><span class="t-he" style="display:none">קביעת פגישה</span></div>
-    <h2 class="stitle" style="text-align:center;">
-      <span class="t-en">Let's meet — <em>Zoom or in person</em></span>
-      <span class="t-he" style="display:none">בואו נפגש — <em>זום או פרונטלי</em></span>
-    </h2>
-    <p class="sdesc" style="max-width:100%;margin-bottom:32px;">
-      <span class="t-en">Fill in your details and choose a time that works for you. We'll confirm within 24 hours.</span>
-      <span class="t-he" style="display:none">מלאו את הפרטים ובחרו זמן שמתאים לכם. נאשר תוך 24 שעות.</span>
+<section class="wrap" id="cases">
+  <div class="stag"><span class="t-en">Case Studies</span><span class="t-he">סיפורי לקוח</span></div>
+  <h2 class="stitle"><span class="t-en">The work, <em>in practice</em></span><span class="t-he">העבודה, <em>בפועל</em></span></h2>
+  <div class="case-grid">
+    <div class="case">
+      <h3 class="case-client">[Client or industry]</h3>
+      <div class="case-l"><span class="t-en">Challenge</span><span class="t-he">האתגר</span></div>
+      <p class="case-p">[What was wrong]</p>
+      <div class="case-l"><span class="t-en">What we did</span><span class="t-he">מה עשינו</span></div>
+      <p class="case-p">[What CBDR did]</p>
+      <div class="case-l"><span class="t-en">Result</span><span class="t-he">התוצאה</span></div>
+      <p class="case-p">[Measurable result]</p>
+    </div>
+    <div class="case">
+      <h3 class="case-client">[Client or industry]</h3>
+      <div class="case-l"><span class="t-en">Challenge</span><span class="t-he">האתגר</span></div>
+      <p class="case-p">[What was wrong]</p>
+      <div class="case-l"><span class="t-en">What we did</span><span class="t-he">מה עשינו</span></div>
+      <p class="case-p">[What CBDR did]</p>
+      <div class="case-l"><span class="t-en">Result</span><span class="t-he">התוצאה</span></div>
+      <p class="case-p">[Measurable result]</p>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- CONTACT -->
+<section class="wrap" id="contact">
+  <div class="contact-box">
+    <div class="stag"><span class="t-en">Contact</span><span class="t-he">צור קשר</span></div>
+    <h2 class="stitle"><span class="t-en">Let's talk. <em>Zoom or in person.</em></span><span class="t-he">בואו נדבר. <em>בזום או פנים אל פנים.</em></span></h2>
+    <p class="sdesc">
+      <span class="t-en">Tell us a little about what you need and pick a time that works for you. We'll confirm within 24 hours.</span>
+      <span class="t-he">ספרו לנו בקצרה מה אתם צריכים ובחרו זמן שמתאים לכם. נאשר תוך 24 שעות.</span>
     </p>
 
-    <form id="booking-form" style="background:var(--off);border:1px solid var(--border);border-radius:20px;padding:36px;text-align:right;" onsubmit="submitBooking(event)">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+    <form id="booking-form" onsubmit="submitBooking(event)">
+      <div class="fgrid">
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Full Name</span><span class="t-he" style="display:none">שם מלא</span>
-          </label>
-          <input type="text" id="f-name" required placeholder="" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+          <label class="flabel" for="f-name"><span class="t-en">Full Name</span><span class="t-he">שם מלא</span></label>
+          <input class="finput" type="text" id="f-name" autocomplete="name" required>
         </div>
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Company</span><span class="t-he" style="display:none">חברה</span>
-          </label>
-          <input type="text" id="f-company" placeholder="" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+          <label class="flabel" for="f-company"><span class="t-en">Company (optional)</span><span class="t-he">חברה (לא חובה)</span></label>
+          <input class="finput" type="text" id="f-company" autocomplete="organization">
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+      <div class="fgrid">
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Email</span><span class="t-he" style="display:none">אימייל</span>
-          </label>
-          <input type="email" id="f-email" required placeholder="" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+          <label class="flabel" for="f-email"><span class="t-en">Email</span><span class="t-he">אימייל</span></label>
+          <input class="finput" type="email" id="f-email" autocomplete="email" required>
         </div>
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Phone</span><span class="t-he" style="display:none">טלפון</span>
-          </label>
-          <input type="tel" id="f-phone" placeholder="" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+          <label class="flabel" for="f-phone"><span class="t-en">Phone (optional)</span><span class="t-he">טלפון (לא חובה)</span></label>
+          <input class="finput" type="tel" id="f-phone" autocomplete="tel">
         </div>
       </div>
-      <div style="margin-bottom:14px;">
-        <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-          <span class="t-en">Meeting Type</span><span class="t-he" style="display:none">סוג פגישה</span>
-        </label>
-        <div style="display:flex;gap:10px;">
-          <label style="flex:1;display:flex;align-items:center;gap:8px;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;cursor:pointer;background:var(--white);transition:border-color 0.2s;" id="lbl-zoom">
-            <input type="radio" name="meeting-type" value="zoom" checked onchange="selectType('zoom')" style="accent-color:var(--blue);">
-            <span style="font-size:14px;">📹 Zoom</span>
-          </label>
-          <label style="flex:1;display:flex;align-items:center;gap:8px;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;cursor:pointer;background:var(--white);transition:border-color 0.2s;" id="lbl-person">
-            <input type="radio" name="meeting-type" value="in-person" onchange="selectType('in-person')" style="accent-color:var(--blue);">
-            <span style="font-size:14px;">🤝 <span class="t-en">In Person</span><span class="t-he" style="display:none">פרונטלי</span></span>
-          </label>
+      <div class="frow">
+        <span class="flabel"><span class="t-en">Meeting Type</span><span class="t-he">סוג פגישה</span></span>
+        <div class="ftypes">
+          <label class="ftype"><input type="radio" name="meeting-type" value="Zoom" checked> Zoom</label>
+          <label class="ftype"><input type="radio" name="meeting-type" value="In person"> <span class="t-en">In Person</span><span class="t-he">פנים אל פנים</span></label>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+      <div class="fgrid">
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Preferred Date</span><span class="t-he" style="display:none">תאריך מועדף</span>
-          </label>
-          <input type="date" id="f-date" required style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+          <label class="flabel" for="f-date"><span class="t-en">Preferred Date</span><span class="t-he">תאריך מועדף</span></label>
+          <input class="finput" type="date" id="f-date" required>
         </div>
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-            <span class="t-en">Preferred Time</span><span class="t-he" style="display:none">שעה מועדפת</span>
-          </label>
-          <select id="f-time" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s;appearance:none;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">14:00</option>
-            <option value="15:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="17:00">17:00</option>
+          <label class="flabel" for="f-time"><span class="t-en">Preferred Time (your local time)</span><span class="t-he">שעה מועדפת (לפי השעון שלכם)</span></label>
+          <select class="finput" id="f-time">
+            <option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option>
+            <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
           </select>
         </div>
       </div>
-      <div style="margin-bottom:24px;">
-        <label style="display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:0.06em;">
-          <span class="t-en">What's it about? (optional)</span><span class="t-he" style="display:none">במה מדובר? (אופציונלי)</span>
-        </label>
-        <textarea id="f-note" rows="3" placeholder="" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;background:var(--white);color:var(--text);outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+      <div class="frow">
+        <label class="flabel" for="f-note"><span class="t-en">What's it about? (optional)</span><span class="t-he">במה מדובר? (לא חובה)</span></label>
+        <textarea class="finput" id="f-note" rows="3"></textarea>
       </div>
-      <button type="submit" style="width:100%;padding:14px;background:var(--gold-mid);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
-        <span class="t-en">Schedule Meeting →</span><span class="t-he" style="display:none">קביעת פגישה ←</span>
-      </button>
+      <button type="submit" class="fsubmit"><span class="t-en">Request a meeting →</span><span class="t-he">בקשת פגישה ←</span></button>
+      <p class="fnote">
+        <span class="t-en">Prefer email? Write to </span><span class="t-he">מעדיפים מייל? כתבו אל </span><a class="mail-link" href="mailto:niv@cbdr-consulting.com">niv@cbdr-consulting.com</a>
+      </p>
     </form>
 
-    <div id="booking-success" style="display:none;background:var(--off);border:1.5px solid #b8e0c8;border-radius:20px;padding:48px 36px;text-align:center;">
-      <div style="font-size:48px;margin-bottom:16px;">✅</div>
-      <div style="font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:10px;">
-        <span class="t-en">Request received!</span><span class="t-he" style="display:none">הבקשה התקבלה!</span>
-      </div>
-      <div style="font-size:14px;color:var(--muted);font-weight:300;">
-        <span class="t-en">We'll confirm your meeting within 24 hours.</span><span class="t-he" style="display:none">נאשר את הפגישה תוך 24 שעות.</span>
+    <div id="booking-success" role="status">
+      <div class="succ-t"><span class="t-en">One last step</span><span class="t-he">עוד צעד אחד</span></div>
+      <div class="succ-d">
+        <span class="t-en">Your email app should now be open with your request filled in. Press send, and we'll confirm within 24 hours.<br>Nothing opened? Email us directly at </span>
+        <span class="t-he">תוכנת המייל שלכם אמורה להיפתח עם הבקשה מוכנה. לחצו על שליחה, ונאשר תוך 24 שעות.<br>לא נפתח כלום? כתבו לנו ישירות אל </span>
+        <a class="mail-link" href="mailto:niv@cbdr-consulting.com">niv@cbdr-consulting.com</a>
       </div>
     </div>
   </div>
-</div>
-
-<hr class="sep">
+</section>
 
 <!-- CTA -->
 <section class="cta-wrap">
   <div class="cta-inner">
-    <div class="cta-pre"><span class="t-en">The money is out there. <em>We'll find it for you.</em></span><span class="t-he" style="display:none">הכסף שם בחוץ. <em>אנחנו נמצא אותו בשבילכם.</em></span></div>
-    </div>
-    <h2 class="cta-t"><span class="t-en">Ready to talk about<br>your <em>next market?</em></span><span class="t-he" style="display:none">מוכנים לדבר על<br>השוק <em>הבא שלכם?</em></span></h2>
-    </h2>
-    <p class="cta-s"><span class="t-en">A short call, no commitment. We'll figure out together where the opportunity is hiding.</span><span class="t-he" style="display:none">שיחה קצרה, בלי התחייבות. נבין יחד איפה ההזדמנות מתחבאת.</span></p>
-    
-    <a href="/cdn-cgi/l/email-protection#88f1e7fdfac8ede5e9e1e4a6ebe7e5" class="cta-btn">
-      <span class=""><span class="t-en">Get in touch →</span><span class="t-he" style="display:none">לשיחת היכרות ←</span></span>
-      
-    </a>
+    <h2 class="cta-t"><span class="t-en">Whatever the challenge,<br>you get <em>peace of mind.</em></span><span class="t-he">לא משנה מה האתגר,<br>אתם מקבלים <em>שקט נפשי.</em></span></h2>
+    <p class="cta-s"><span class="t-en">A short call, no commitment. Tell us what is on your mind.</span><span class="t-he">שיחה קצרה, בלי התחייבות. ספרו לנו מה מטריד אתכם.</span></p>
+    <a href="#contact" class="btn-main"><span class="t-en">Let's talk →</span><span class="t-he">בואו נדבר ←</span></a>
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="foot-left">
+  <div>
     <div class="foot-abbr"><span class="g">C</span>B<span class="g">D</span>R</div>
-    <div class="foot-slogan">Money is everywhere. The question is — where is it hiding?</div>
+    <div class="foot-slogan"><span class="t-en">Your Business, Your Peace of Mind.</span><span class="t-he">העסק שלכם, השקט הנפשי שלכם.</span></div>
   </div>
-  <div class="foot-right">Cross-Border Development & Representation<br><span class="t-en">Israel ↔ World</span><span class="t-he" style="display:none">ישראל ↔ עולם</span></div>
-  
+  <div class="foot-right">
+    <a href="https://www.linkedin.com/company/cbdr-consulting" target="_blank" rel="noopener">LinkedIn</a><span class="foot-dot">|</span><a class="mail-link" href="mailto:niv@cbdr-consulting.com">niv@cbdr-consulting.com</a><br>
+    © <span id="yr">2026</span> CBDR
+  </div>
 </footer>
 
 <script>
+// Where meeting requests are sent. Change this one line to change the address everywhere.
+var CONTACT_EMAIL = 'niv@cbdr-consulting.com';
+
+var META = {
+  en: { title: 'CBDR | Your Business, Your Peace of Mind' },
+  he: { title: 'CBDR | העסק שלכם, השקט הנפשי שלכם' }
+};
+
+function setL(l) {
+  if (l !== 'he') l = 'en';
+  document.documentElement.lang = l;
+  document.documentElement.dir = (l === 'he') ? 'rtl' : 'ltr';
+  document.title = META[l].title;
+  document.querySelectorAll('.ltb').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-l') === l); });
+  try { localStorage.setItem('cbdr-lang', l); } catch (e) {}
+}
 
 function submitBooking(e) {
   e.preventDefault();
-  var name = document.getElementById('f-name').value;
-  var email = document.getElementById('f-email').value;
-  var date = document.getElementById('f-date').value;
-  var time = document.getElementById('f-time').value;
+  var v = function (id) { return document.getElementById(id).value; };
   var type = document.querySelector('input[name="meeting-type"]:checked').value;
-  var company = document.getElementById('f-company').value;
-  var note = document.getElementById('f-note').value;
-  
-  // Build mailto
-  var subject = encodeURIComponent('Meeting Request - CBDR | ' + date + ' ' + time);
+  var subject = encodeURIComponent('Meeting request: ' + v('f-name') + ' | ' + v('f-date') + ' ' + v('f-time'));
   var body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Company: ' + company + '\n' +
-    'Email: ' + email + '\n' +
-    'Meeting Type: ' + type + '\n' +
-    'Date: ' + date + '\n' +
-    'Time: ' + time + '\n' +
-    'Note: ' + note
+    'Name: ' + v('f-name') + '\n' +
+    'Company: ' + v('f-company') + '\n' +
+    'Email: ' + v('f-email') + '\n' +
+    'Phone: ' + v('f-phone') + '\n' +
+    'Meeting type: ' + type + '\n' +
+    'Preferred date: ' + v('f-date') + '\n' +
+    'Preferred time: ' + v('f-time') + '\n' +
+    'About: ' + v('f-note')
   );
-  
-  window.location.href = 'mailto:your@email.com?subject=' + subject + '&body=' + body;
-  
+  window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
   document.getElementById('booking-form').style.display = 'none';
   document.getElementById('booking-success').style.display = 'block';
 }
 
-function selectType(type) {
-  document.getElementById('lbl-zoom').style.borderColor = type === 'zoom' ? 'var(--blue)' : 'var(--border)';
-  document.getElementById('lbl-person').style.borderColor = type === 'in-person' ? 'var(--blue)' : 'var(--border)';
-}
-selectType('zoom');
-
-function setL(l) {
-  var isHe = (l === 'he');
-  document.documentElement.dir = isHe ? 'rtl' : 'ltr';
-  document.documentElement.lang = l;
-  document.querySelectorAll('.t-en').forEach(function(el){ el.style.display = isHe ? 'none' : ''; });
-  document.querySelectorAll('.t-he').forEach(function(el){ el.style.display = isHe ? '' : 'none'; });
-  document.querySelectorAll('.ltb').forEach(function(b){
-    b.classList.toggle('on', (isHe && b.textContent.trim()==='עב') || (!isHe && b.textContent.trim()==='EN'));
-  });
-  var tl = document.querySelector('.nav-tagline');
-  if(tl) tl.textContent = isHe ? 'פיתוח עסקי וייצוג בינלאומי' : 'Cross-Border Development & Representation';
-}
+(function init() {
+  document.querySelectorAll('.mail-link').forEach(function (a) { a.href = 'mailto:' + CONTACT_EMAIL; a.textContent = CONTACT_EMAIL; });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var d = document.getElementById('f-date'); if (d) d.min = new Date().toISOString().slice(0, 10);
+  var l = null;
+  try { l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('cbdr-lang'); } catch (e) {}
+  if (l === 'he') setL('he');
+})();
 </script>
+</body>
 </html>
