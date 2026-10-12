@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://cbdr-consulting.com/</loc>
-    <lastmod>2026-10-05</lastmod>
-  </url>
+  <url><loc>https://cbdr-consulting.com/</loc></url>
+  <url><loc>https://cbdr-consulting.com/global-account-management</loc></url>
+  <url><loc>https://cbdr-consulting.com/operational-excellence</loc></url>
+  <url><loc>https://cbdr-consulting.com/procurement-supply-chain</loc></url>
+  <url><loc>https://cbdr-consulting.com/logistics-resource-management</loc></url>
+  <url><loc>https://cbdr-consulting.com/strategic-partnerships</loc></url>
+  <url><loc>https://cbdr-consulting.com/b2b-business-development</loc></url>
 </urlset>
